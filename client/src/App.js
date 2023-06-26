@@ -10,8 +10,8 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import LoginForm from './components/LoginForm';
+import SignupForm from './components/SignupForm';
 import Navbar from './components/Navbar';
 
 const httpLink = createHttpLink({
@@ -48,8 +48,8 @@ function App() {
         <Switch>
           <Route exact path='/' component={SearchBooks} />
           <Route exact path='/saved' component={SavedBooks} />
-          <Route path ='/login' component={Login} />
-          <Route path ='/signup' component={Signup} />
+          <Route path ='/login' component={LoginForm} />
+          <Route path ='/signup' component={SignupForm} />
           <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
         </Switch>
       </>
