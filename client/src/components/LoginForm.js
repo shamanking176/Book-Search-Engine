@@ -7,7 +7,7 @@ import { LOGIN_USER } from '../utils/mutation';
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
-  const [loginUser, { error, data }] = useMutation(LOGIN_USER);
+  const [loginUser, { error }] = useMutation(LOGIN_USER);
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
 
@@ -27,7 +27,9 @@ const LoginForm = () => {
     }
 
     try {
-      const data = await loginUser({
+      const {data} = await loginUser({
+
+
       variables: { ...userFormData },
       });
 
