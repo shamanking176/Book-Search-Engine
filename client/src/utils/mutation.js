@@ -25,12 +25,12 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_BOOK = gql`
-mutation saveBook($bookId: ID!,$authors: [String], $description: String!, $image: String, $link: String, $title: String!){
-  saveBook(bookId: $bookId, author: $authors, description: $description, image: $image, link: $link, title: $title) {
+mutation saveBook($bookData: BookInput){
+  saveBook(bookData: $bookData) {
     token
-    books {
+    savedBooks {
       bookId
-      author
+      authors
       description
       image
       link
