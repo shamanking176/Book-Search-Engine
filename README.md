@@ -46,6 +46,7 @@ WHEN I click on the Logout button
 THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
 ## Application
-https://tech-blog-al.herokuapp.com/
+https://booksearchengineal-802e975d445b.herokuapp.com/
 
-![Capture](https://github.com/shamanking176/Tech-Blog/assets/107295752/711dedcd-2017-4768-9397-73cd19aef7e6)
+![image](https://github.com/shamanking176/Book-Search-Engine/assets/107295752/724249aa-a119-45f6-8bd8-3843f9e6b629)
+
